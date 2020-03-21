@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# Copyright 2010-2018 Canonical Ltd.
+# All rights reserved.
+
+python2 -m unittest discover unitconv/tests/
