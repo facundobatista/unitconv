@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Copyright 2010-2018 Canonical Ltd.
+# Copyright 2020 Facundo Batista
 # All rights reserved.
 
-python2 -m unittest discover unitconv/tests/
+fades --python python3 -r requirements.txt -x python -m unittest discover unitconv/tests/
