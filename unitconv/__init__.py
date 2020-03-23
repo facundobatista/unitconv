@@ -10,6 +10,7 @@ import logging
 import math
 import random
 import re
+import sys
 
 import pint
 
@@ -593,9 +594,22 @@ def convert(source):
     return human_from.format(nicer_orig) + ' = ' + human_to.format(nicer_res)
 
 
-if __name__ == '__main__':
-    import sys
+USAGE = """
+Usage: unitconv <expression>
+   ej: unitconv 42 km to miles
+"""
 
+
+def main():
+    """Main entry point to run as script. Use `convert` instead if as module."""
+    params = sys.argv[1:]
+    if params:
+        print(convert(" ".join(params)))
+    else:
+        print(USAGE)
+
+
+if __name__ == '__main__':
     # set up logging so it's easier to debug
     logger.setLevel(logging.DEBUG)
     h = logging.StreamHandler()
