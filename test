@@ -4,4 +4,4 @@
 # Copyright 2020 Facundo Batista
 # All rights reserved.
 
-fades --python python3 -r requirements.txt -x python -m unittest discover unitconv/tests/
+fades --python python3 -r requirements.txt -x python -m unittest discover tests/
