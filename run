@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Copyright 2020 Facundo Batista
+# All rights reserved.
+
+fades -r requirements.txt -x python -m unitconv "$@"
