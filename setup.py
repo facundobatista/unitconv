@@ -20,14 +20,15 @@ setuptools.setup(
         "A units converter that understands a lot of written queries and produce "
         "a nice human response"),
     long_description=long_description,
-    long_description_content_type="text/rest",
+    long_description_content_type="text/x-rst",
     url="https://github.com/facundobatista/unitconv",
     packages=setuptools.find_packages(),
     package_data={'': ["LICENSE", "requirements.txt"]},
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: Apache License",
+        "Environment :: Console",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
     ],
     entry_points={
         'console_scripts': ["unitconv = unitconv:main"],
