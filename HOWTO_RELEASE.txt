@@ -1,0 +1,9 @@
+General:
+
+- Remember to upgrade version number in setup.py
+
+PyPI:
+
+    rm -rf dist/
+    ./setup.py sdist
+    fades -d twine -x twine upload dist/unitconv-*.tar.gz
